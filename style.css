@@ -1,0 +1,727 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Kaspersky Sans Regular';
+    src: url(./Kaspersky\ Sans\ Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1D1D1B;
+    margin: 0;
+}
+
+.page {
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Inter';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+.header {
+    background: #1D1D1B;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.header__cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0.4;
+    background: #1D1D1B;
+}
+
+.header__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    position: relative;
+}
+
+.header__logo {
+    z-index: 1000;
+    /* max-width: 1000px; */
+    margin-right: 61.4%;
+}
+
+
+
+select {
+    padding: 8px;
+    width: 70px;
+    height: 38px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(images/select-arrow.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    z-index: 1000;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+
+.cover {
+
+    height: 768px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.cover__wrapper {
+    background: linear-gradient(100.56deg, rgba(29, 29, 27, 0) 0%, #1D1D1B 59.08%), linear-gradient(180deg, rgba(29, 29, 27, 0) 0%, #1D1D1B 100%), linear-gradient(103.91deg, #23D1AE 0%, rgba(1, 50, 35, 0) 59.93%);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cover__content {
+    z-index: 999;
+}
+
+
+.cover__img {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+}
+
+.cover__margin-titles {
+    margin-left: 11.57%;
+    margin-top: 114px;
+}
+
+.cover__margin-texts {
+    margin-left: 11.68%;
+}
+
+.cover__title {
+    max-width: 607px;
+    font-family: 'Kaspersky Sans Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.cover__line {
+    width: 89px;
+    opacity: 0.8;
+    border: 1px solid #FFFFFF;
+    margin: 35px 0 5px;
+}
+
+.cover__subtitle {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+    max-width: 538px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.cover__text-block {
+    display: flex;
+    align-items: baseline;
+}
+
+.cover__text {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    max-width: 503px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cover__text-check {
+    content: '';
+    display: inline-block;
+    background-image: url(./images/green-arr.svg);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: none;
+    margin-right: 17.8px;
+}
+
+.cover__text-white {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.cover__buy {
+
+    align-self: center;
+
+    width: 100%;
+
+    max-width: 1172px;
+    order: 6;
+    z-index: 999;
+    display: flex;
+    min-height: 112px;
+
+    background: linear-gradient(271.57deg, rgba(0, 168, 142, 0.4) 77.05%, rgba(126, 255, 51, 0.4) 100%), #23D1AE;
+}
+
+.cover__save {
+    width: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #8233FF;
+    position: relative;
+    margin-left: 626px;
+   
+}
+
+.cover__save-text {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+.cover__compatible {
+    margin-left: 11.39%;
+    display: flex;
+    align-items: center;
+    order: 6;
+    z-index: 100;
+    margin-top: 32px;
+}
+
+.cover__compatible-img :first-child {
+    margin-left: 24px;
+}
+
+.cover__compatible-img {
+    margin-left: 16px;
+}
+
+.cover__compatible-text {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.product {
+
+    align-items: center;
+    align-self: center;
+
+    width: 100%;
+
+    max-width: 1172px;
+    order: 6;
+    z-index: 999;
+    display: flex;
+    min-height: 112px;
+
+    margin: auto;
+    justify-content: space-evenly;
+    background: linear-gradient(271.57deg, rgba(0, 168, 142, 0.4) 77.05%, rgba(126, 255, 51, 0.4) 100%), #23D1AE;
+}
+
+.product__wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.product__buy-logo {
+    width: 72px;
+    height: 81px;
+}
+
+.product__kaspersky {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 28px;
+}
+
+.product__title {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+
+    color: #1D1D1B;
+}
+
+.product__rating {
+    display: flex;
+    margin-top: 6px;
+    align-items: center;
+}
+
+.product__star {
+    /* margin-left: 5px; */
+    width: 14px;
+    height: 14px;
+}
+
+.product__reviews {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+
+
+    color: #1D1D1B;
+    margin-left: 10px;
+}
+
+.product__devider {
+    height: 88px;
+    width: 2px;
+    height: 88px;
+    background: #FFFFFF;
+    opacity: 0.2;
+}
+
+.product__price-save {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: baseline;
+
+    text-decoration: line-through;
+    color: #006D5C;
+    margin: 0 12px 0 27px;
+}
+
+.product__price-save-cent {
+    font-size: 12px;
+}
+
+
+
+.product__price {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 52px;
+
+    display: flex;
+    align-items: baseline;
+    text-align: right;
+    letter-spacing: -0.03em;
+
+
+    color: #1D1D1B;
+}
+
+.product__price-cent {
+    font-size: 32px;
+}
+
+
+.product__wrapper-sticky {
+    position: sticky;
+    top: 106px
+}
+
+.product__wrapper-relative {
+    position: relative;
+    top: -106px
+}
+
+.product__button-buy {
+    width: 118px;
+    height: 48px;
+    background: #FF3748;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 24px;
+
+    color: #FFFFFF;
+
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    border: 2px solid #1D1D1B;
+    width: 191px;
+    height: 48px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
+    top: 15px;
+}
+
+
+.select-items div,
+.select-selected {
+    font-family: 'Kaspersky Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+
+    cursor: pointer;
+}
+
+
+.select-items {
+    position: absolute;
+    background-color: #15C1A1;
+    border: 2px solid #1D1D1B;
+    border-top: none;
+    top: 100%;
+    left: -2px;
+    right: -2px;
+    z-index: 99;
+}
+
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: #7FE3CE;
+    ;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cover__save {
+        margin-left: 60.89%;
+    }
+
+    .product__devider {
+        height: 88px;
+        width: 296px;
+        height: 2px;
+        margin: 20px 0;
+        background: #FFFFFF;
+        opacity: 0.2;
+    }
+
+    .product {
+        flex-direction: column;
+        margin: 0 16px 0 16px;
+        width: unset;
+
+        padding: 20px 16px;
+    }
+
+    .product__kaspersky {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 23px;
+    }
+
+    .product__wrapper:last-child {
+        flex-direction: column;
+    }
+
+    .custom-select {
+        width: 296px;
+        height: 48px;
+    }
+
+    .product__button-buy {
+        width: 296px;
+        height: 48px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .product__price-save {
+        margin: 0 12px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        background: #1D1D1B;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+        position: relative;
+    }
+
+    .header__logo {
+        z-index: 1000;
+        /* max-width: 1000px; */
+        margin-right: 25%;
+    }
+
+    .cover__title {
+        font-family: 'Kaspersky Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        max-width: 312px;
+
+        color: #FFFFFF;
+    }
+
+    .cover__line {
+        width: 84px;
+        margin: 34px 0 9px;
+    }
+
+    .cover__subtitle {
+        font-family: 'Kaspersky Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 27px;
+        /* or 112% */
+        margin-bottom: 26px;
+        /* Primary / White */
+        color: #FFFFFF;
+    }
+
+    .cover__compatible {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 27px;
+        margin-bottom: 43px;
+    }
+
+    .cover__compatible-text {
+        font-family: 'Kaspersky Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        font-variant: small-caps;
+
+        /* Primary / White */
+        color: #FFFFFF;
+        margin-bottom: 13px;
+    }
+
+    .cover {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cover__wrapper {
+        display: none;
+    }
+
+    .cover__content {
+
+
+        order: 3;
+
+    }
+
+    .cover__margin-titles {
+        margin-left: 6.7%;
+        margin-top: 50px;
+    }
+
+    .cover__margin-texts {
+        margin-left: 7.3%;
+    }
+
+    .cover__text {
+        font-family: 'Kaspersky Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+
+
+    .cover__img {
+        background-image: url(images/background__low.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        min-height: 372px;
+    }
+
+    .cover__save {
+        margin-left: 16px;
+        width: 179px;
+        height: 36px;
+    }
+
+    .cover__save-text {
+        font-family: 'Kaspersky Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        /* or 125% */
+        text-align: center;
+
+        /* Primary / White */
+        color: #FFFFFF;
+    }
+
+
+
+    .product__wrapper-relative {
+        position: static;
+    }
+
+    .product {
+        flex-direction: column;
+        padding: 20px 16px;
+
+    }
+
+    .product__price {
+        font-size: 54px;
+    }
+
+
+
+    .product__kaspersky {
+        width: unset;
+        margin-left: 23px;
+    }
+
+    .product__buy-logo {
+        width: 50px;
+        height: 56px;
+    }
+}
